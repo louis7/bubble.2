@@ -10,7 +10,7 @@ function displayGame (){
    let userName = document.getElementById('name').value;
    document.getElementById('nameform').remove();
    let customBubble = `<div class="card bg-dark  w-25  border m-2 border-white bg-white">
-     <img src="https://github.com/louis7/manga-bubble/test_bubble.jpg" class="card-img" alt="...">
+     <img src=" https://louis7.github.io/manga-bubble/test_bubble.jpg" class="card-img" alt="...">
      <div class="card-img-overlay  b w-50 h-50 mx-auto my-auto  d-inline-flex p-0 justify-content-center" >
 
        <p class="align-self-center mt-3">`+userName+`</p>
@@ -18,7 +18,7 @@ function displayGame (){
      </div>
    </div>`
    let customBubble_two = `<div class="card bg-dark  w-25  border m-2 border-white bg-white">
-     <img src="https://github.com/louis7/manga-bubble/double_bubble.jpg" class="card-img" alt="...">
+     <img src=" https://louis7.github.io/manga-bubble/double_bubble.jpg" class="card-img" alt="...">
 
      </div>
    </div>`
