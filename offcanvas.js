@@ -1,5 +1,7 @@
 
 
+let userMessage = ""
+
 function displayForm (){
    let button = document.getElementById('title')
     button.remove();
@@ -7,30 +9,48 @@ function displayForm (){
 }
 
 function displayGame (){
-   let userName = document.getElementById('name').value;
-   document.getElementById('nameform').remove();
-   let customBubble = `<div class="card bg-dark  w-25  border m-2 border-white bg-white">
-     <img src=" https://louis7.github.io/manga-bubble/test_bubble.jpg" class="card-img" alt="...">
+   let ai_answer = `<div class="card bg-dark  w-25  border m-2 border-white bg-white">
+     <img src="/Users/prometheus/Desktop/bubble_stories/test_bubble.jpg" class="card-img" alt="...">
      <div class="card-img-overlay  b w-50 h-50 mx-auto my-auto  d-inline-flex p-0 justify-content-center" >
 
-       <p class="align-self-center mt-3">`+userName+`</p>
+       <p class="align-self-center mt-3">Hey `+userMessage+`</p>
 
      </div>
    </div>`
+   let user_bubble = `<div id ="user_bubble" class="col-sm d-flex justify-content-end">
+     <div class="card bg-dark  w-25  border m-2 border-white bg-white">
+       <img src="/Users/prometheus/Desktop/bubble_stories/user_bubble.jpg" class="card-img" alt="...">
+       <div class="card-img-overlay  b w-50 h-50 mx-auto my-auto  d-inline-flex p-0 justify-content-center" >
+
+         <p class="align-self-center mt-3">`+userMessage+`</p>
+
+       </div>
+     </div>
+    </div>`
    let customBubble_two = `<div class="card bg-dark  w-25  border m-2 border-white bg-white">
-     <img src=" https://louis7.github.io/manga-bubble/double_bubble.jpg" class="card-img" alt="...">
+     <img src="/Users/prometheus/Desktop/bubble_stories/double_bubble.jpg" class="card-img" alt="...">
 
      </div>
    </div>`
-   document.getElementById('main').innerHTML += customBubble;
    setTimeout(function(){
-     document.getElementById('main').innerHTML += customBubble_two;
-   },1500); //delay is in milliseconds
+   document.getElementById('main').innerHTML += user_bubble;
+ },500); //delay is in milliseconds
+
+ setTimeout(function(){
+   document.getElementById('main').innerHTML += ai_answer;
+ },2000); //delay is in milliseconds
+
+   setTimeout(function(){
+  document.getElementById('main').innerHTML += customBubble_two;
+},3500); //delay is in milliseconds
 
 
 }
 
-
+function saveMessage(){
+   userMessage = document.getElementById('text_message').value
+  document.getElementById('text_message').value = " "
+}
 
 
  //need a better solution for hidden/ux experience
