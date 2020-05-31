@@ -10,7 +10,7 @@ function displayForm (){
 
 function displayGame (){
    let ai_answer = `<div class="card bg-dark  w-25  border m-2 border-white bg-white">
-     <img src="https://louis7.github.io/bubble.2/manga-bubble_2/test_bubble.jpg" class="card-img" alt="...">
+     <img src="https://louis7.github.io/bubble.2/test_bubble.jpg" class="card-img" alt="...">
      <div class="card-img-overlay  b w-50 h-50 mx-auto my-auto  d-inline-flex p-0 justify-content-center" >
 
        <p class="align-self-center mt-3">Hey `+userMessage+`</p>
@@ -19,7 +19,7 @@ function displayGame (){
    </div>`
    let user_bubble = `<div id ="user_bubble" class="col-sm d-flex justify-content-end">
      <div class="card bg-dark  w-25  border m-2 border-white bg-white">
-       <img src="https://louis7.github.io/bubble.2/manga-bubble_2/user_bubble.jpg" class="card-img" alt="...">
+       <img src="https://louis7.github.io/bubble.2/user_bubble.jpg" class="card-img" alt="...">
        <div class="card-img-overlay  b w-50 h-50 mx-auto my-auto  d-inline-flex p-0 justify-content-center" >
 
          <p class="align-self-center mt-3">`+userMessage+`</p>
@@ -28,7 +28,7 @@ function displayGame (){
      </div>
     </div>`
    let customBubble_two = `<div class="card bg-dark  w-25  border m-2 border-white bg-white">
-     <img src="https://louis7.github.io/bubble.2/manga-bubble_2/double_bubble.jpg" class="card-img" alt="...">
+     <img src="https://louis7.github.io/bubble.2/double_bubble.jpg" class="card-img" alt="...">
 
      </div>
    </div>`
