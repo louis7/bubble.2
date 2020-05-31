@@ -37,45 +37,47 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href=" https://louis7.github.io/manga-bubble/floating-labels/offcanvas.css" rel="stylesheet">
-    <link href=" https://louis7.github.io/manga-bubble/floating-labels/offcanvas.js" rel="stylesheet">
+    <link href="/Users/prometheus/Desktop/bubble_stories/offcanvas.css" rel="stylesheet">
+    <link href="/Users/prometheus/Desktop/bubble_stories/offcanvas.js" rel="stylesheet">
     <!--  Core Javascript -->
 
-    <script src=" https://louis7.github.io/manga-bubble/offcanvas.js"> </script>
-
+    <script src="/Users/prometheus/Desktop/bubble_stories/offcanvas.js"> </script>
 
   </head>
 
 
 
   <div class="nav-scroller bg-white shadow-sm">
-    <nav class="nav nav-underline">
-      <a class="nav-link active" href="#">Home</a>
-      <a class="nav-link" href="#">
-        Feeds
-      </a>
-      <a class="nav-link" href="#">Friends
-     <span class="badge badge-pill bg-light align-text-bottom">27</span>
-  </a>
-      <a class="nav-link" href="#">Log out</a>
-    </nav>
   </div>
 
 <main role="main" class="container" id ="main">
 
 
-  <div id = "title" class="mx-auto pt-5" style="width: 200px;">
-    <div class="mx-auto pt-5" style="width: 200px;">
-         <div class="container pt-5" class="mx-auto" style="width: 200px">
-           <button id = "title" type="button" class="btn btn-lg btn-light" onclick="displayForm(); return false">STAR FALL</button>
 
-         </div>
+
+  <div class="card bg-dark  w-25  border m-2 border-white bg-white">
+    <img src="/Users/prometheus/Desktop/bubble_stories/test_bubble.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay  b w-50 h-50 mx-auto my-auto  d-inline-flex p-0 justify-content-center" >
+
+      <p class="align-self-center mt-3">hello.</p>
+
     </div>
   </div>
 
 
 
 
+
+    <!-- Text UI -->
+
+    <div class="card-footer fixed-bottom">
+  					<div class="input-group">
+                  <textarea id="text_message" class="form-control type_msg" placeholder="Type your name..."></textarea>
+  								  <div class="input-group-append">
+  								     	<span type="submit" onclick= "saveMessage(); displayGame();" class="input-group-text send_btn">Send<i class="fas fa-location-arrow"></i></span>
+  								</div>
+  					</div>
+  	</div>
 
 
 
